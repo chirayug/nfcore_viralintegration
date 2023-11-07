@@ -32,6 +32,7 @@ process STAR_GENOMEGENERATE {
             --genomeFastaFiles $fasta \\
             --sjdbGTFfile $gtf \\
             --runThreadN $task.cpus \\
+            --limitSjdbInsertNsj 1500000
             $memory \\
             $args
         cat <<-END_VERSIONS > versions.yml
