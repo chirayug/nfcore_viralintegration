@@ -53,6 +53,7 @@ process STAR_GENOMEGENERATE {
             --sjdbGTFfile $gtf \\
             --runThreadN $task.cpus \\
             --genomeSAindexNbases \$NUM_BASES \\
+            --limitSjdbInsertNsj 1500000
             $memory \\
             $args
         cat <<-END_VERSIONS > versions.yml

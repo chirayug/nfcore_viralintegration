@@ -48,6 +48,7 @@ process STAR_ALIGN {
         --readFilesIn $reads  \\
         --runThreadN $task.cpus \\
         --outFileNamePrefix $prefix. \\
+        --limitSjdbInsertNsj 1500000
         $out_sam_type \\
         $ignore_gtf \\
         $seq_center \\
